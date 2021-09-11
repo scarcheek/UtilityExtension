@@ -1,0 +1,33 @@
+{
+  "name": "Utility Extensions",
+  "description": "Some handy dandy extensions so i dont need to paste code examples in the console anymore.",
+  "version": "0.9",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "declarativeContent",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kurse.roteskreuz.at/mod/quiz/*"
+      ],
+      "js": [
+        "roteskreuz.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.twitch.tv/*"
+      ],
+      "js": [
+        "twitch.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "manifest_version": 3
+}
