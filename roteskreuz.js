@@ -27,6 +27,12 @@ window.addEventListener("keydown", function (event) {
       event.preventDefault();
       document.querySelector('.questionflagimage').click()
       break
+    case 'ArrowRight': 
+      document.querySelector('.mod_quiz-next-nav')?.click();
+      break;
+    case 'ArrowLeft':
+      this.document.querySelector('.mod_quiz-prev-nav')?.click();
+      break;
   }
   // Cancel the default action to avoid it being handled twice
   event.preventDefault();
