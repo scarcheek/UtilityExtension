@@ -23,6 +23,10 @@ window.addEventListener("keydown", function (event) {
       const button = document.querySelector('.btn-default') ?? document.querySelector('.btn-primary');
       button.click();
       break;
+    case ' ':
+      event.preventDefault();
+      document.querySelector('.questionflagimage').click()
+      break
   }
   // Cancel the default action to avoid it being handled twice
   event.preventDefault();
